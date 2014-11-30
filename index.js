@@ -311,7 +311,6 @@ Browserify.prototype._createPipeline = function (opts) {
         'unshebang', [ this._unshebang() ],
         'syntax', [ this._syntax() ],
         'sort', [ depsSort(dopts) ],
-        'dedupe', [ this._dedupe() ],
         'label', [ this._label(opts) ],
         'emit-deps', [ this._emitDeps() ],
         'debug', [ this._debug(opts) ],
